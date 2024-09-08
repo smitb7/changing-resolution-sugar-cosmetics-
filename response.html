@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .maindivsofimage{
+        width: 100%;
+        height: 1300px;
+        border: 1px solid black;
+        margin: auto;
+        background-color:lightpink ;
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* column-gap: -150px; */
+        
+        
+    }
+    .imagediv{
+        width: 400px;
+        height: 400px;
+        border: 1px solid red;
+        margin: auto;
+        justify-content: space-evenly;
+        
+
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+    }
+    @media (width <= 1024px){
+        .maindivsofimage{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+        }
+        .imagediv{
+            width: 320px;
+            height: 320px;
+            
+            
+        }
+        
+    }
+    @media (width <= 600px) {
+        .maindivsofimage{
+            
+            display: flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+        .imagediv{
+            width: 250px;
+            height: 250px;
+            gap: 10px;
+        }
+        
+    }
+   
+
+</style>
+
+<body>
+    <div class="maindivsofimage">
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/5b050f83-b466-416b-89ce-f179462ac8f0.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://d32baadbbpueqt.cloudfront.net/Promotion/0844a8f6-78e3-429d-b352-4e020f447004.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/9b51e68a-a374-408a-ad3b-7d521346dc13.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/9b51e68a-a374-408a-ad3b-7d521346dc13.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/7ee374a2-db58-4159-83c5-d8b2b02579cd.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/63b782a7-3a1f-4424-953d-372cb8a9cca7.jpg" alt="">
+        </div>
+        <div class="imagediv">
+            <img class="img" src="https://images.sugarcosmetics.com/Promotion/57689980-4832-408a-b43e-593fe85dde39.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
